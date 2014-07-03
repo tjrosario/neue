@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>Pattern Library | DoSomething.org</title>
+
+  <script type="text/javascript" src="js/vendor/modernizr.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <link rel="shortcut icon" href="assets/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" href="assets/apple-touch-icon-precomposed.png">
+
+  <link rel="stylesheet" href="dist/neue.css" media="screen, projection" type="text/css">
+  <!--[if lt IE 9]>
+    <link rel="stylesheet" href="dist/ie.css" type="text/css" />
+
+    <script src="bower_components/html5shiv/dist/html5shiv.js" type="text/javascript"></script>
+    <script src="bower_components/respond/dest/respond.min.js" type="text/javascript"></script>
+  <![endif]-->
+
+  <link rel="stylesheet" href="bower_components/highlightjs/styles/github.css" media="screen, projection" type="text/css">
+  <link rel="stylesheet" href="styleguide/assets/kss.css">
+</head>
+<body>
+<div id="top" class="chrome--wrapper">
+  <nav class="chrome--nav white floating">
+    <a class="logo" href="http://www.dosomething.org"><img src="styleguide/assets/ds-logo.png" alt="DoSomething.org"></a>
+    <a class="hamburger js-toggle-mobile-menu" href="#">&#xe606;</a>
+    <div class="menu">
+      <ul class="primary-nav">
+        <li>
+          <a href="//sites.google.com/a/dosomething.org/dosomethinguxwiki/">
+            <strong>Product Wiki</strong>
+            <span>Specs, mocks, etc.</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="//brand.dosomething.org">
+            <strong>Brand Guide</strong>
+            <span>Style, Tone, and Voice</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="//neue.dosomething.org">
+            <strong>Pattern Library</strong>
+            <span>Interface framework</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="secondary-nav">
+        <ul>
+          <li><a href="https://github.com/DoSomething/neue/releases" class="semver-badge">v4.2.10</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header role="banner" class="-basic -styleguide">
+    <div class="wrapper">
+      <h1 class="__title">Pattern Library</h1>
+    </div>
+  </header>
+
+  <main>
+      <article class="sidebar-content">
+    <section class="styleguide-section">
+      <p>This is <a href="https://www.github.com/dosomething/neue">Neue</a>, our interface framework and pattern library. Neue is made up of four pillars: typography, a fluid grid-based layout system, re-usable interface patterns, and animations. It's a strong foundation for building beautiful interfaces.</p>
+    </section>
+
+    <section class="styleguide-section">
+      <h2 id="fonts-and-colors">Fonts &amp; Colors</h2>
+
+     <h3>Fonts</h3>
+     <p>We use <a href="http://www.marksimonson.com/fonts/view/proxima-nova">Proxima Nova</a> for all of our text and headings.</p>
+     <p class="font-tile" style="font-family: 'Proxima Nova'; font-weight: 400; ">
+     Lorem ipsum dolor sit amet. <code>($font-proxima-nova, $weight-normal)</code>
+     </p>
+
+     <p class="font-tile" style="font-family: 'Proxima Nova'; font-weight: 600; ">
+     Lorem ipsum dolor sit amet. <code>($font-proxima-nova, $weight-sbold)</code>
+     </p>
+
+     <p class="font-tile" style="font-family: 'Proxima Nova'; font-weight: 700; ">
+     Lorem ipsum dolor sit amet. <code>($font-proxima-nova, $weight-bold)</code>
+     </p>
+
+     <p>We use <a href="https://www.google.com/fonts/specimen/Covered+By+Your+Grace">Covered By Your Grace</a> as the "voice" of DoSomething.org.</p>
+     <p class="font-tile" style="font-family: 'CoveredGrace';">
+     Lorem ipsum dolor sit amet. <code>($font-handwritten, $weight-normal)</code>
+     </p>
+
+     <h3>Brand Colors</h3>
+     <p class="color-tile" data-hex="#23b7fb">
+     <strong>Blue</strong> <code>($blue)
+       <span class="js-color-label">&hellip;</span></code>
+     </p>
+
+     <p class="color-tile" data-hex="#4e2b63">
+     <strong>Purple</strong> <code>($purple)
+       <span class="js-color-label">&hellip;</span></code>
+     </p>
+
+     <p class="color-tile" data-hex="#fcd116">
+     <strong>Yellow</strong> <code>($yellow)
+       <span class="js-color-label">&hellip;</span></code>
+     </p>
+
+     <h3>Gray Tones</h3>
+     <p class="color-tile" data-hex="#222">
+     <strong>Off Black</strong> <code>($off-black)
+       <span class="js-color-label">&hellip;</span></code>
+     </p>
+
+     <p class="color-tile" data-hex="#444">
+     <strong>Dark Gray</strong> <code>($dark-gray)
+       <span class="js-color-label">&hellip;</span></code>
+     </p>
+
+     <p class="color-tile" data-hex="#999">
+     <strong>Medium Gray</strong> <code>($med-gray)
+       <span class="js-color-label">&hellip;</span></code>
+     </p>
+
+     <p class="color-tile" data-hex="#ddd">
+     <strong>Light Gray</strong> <code>($light-gray)
+       <span class="js-color-label">&hellip;</span></code>
+     </p>
+
+     <h3>System Colors</h3>
+     <p>They're not part of our brand, but we use these guys in special cases.</p>
+     <p class="color-tile" data-hex="#ff4747">
+     <strong>Red</strong> <code>($red)
+       <span class="js-color-label">&hellip;</span></code>
+     </p>
+
+     <div class="styleguide-section">
+       <p class="kss-tip"><strong>Tip:</strong> Double-click on a swatch to switch between color formats.</p>
+     </div>
+    </section>
+
+    <section class="styleguide-section">
+      <h2 id="typography">Typography</h2>
+      <div class="styleguide-example">
+
+  <h3><a class="js-jump-scroll" href="#11" id="11">1.1 - Headings</a> <em>_base.scss</em></h3>
+  <div class="styleguide-example-content">
+    <div class="styleguide-description">
+    <p>Various heading weights.</p>
+
+    
+      <ul class="styleguide-modifier">
+        
+          <li><strong>.banner</strong> - Stylized header banners.</li>
+        
+      </ul>
+    
+    </div>
+    <div class="styleguide-element">
+      
+        <h1 class="$modifier_class"><span>Heading</span></h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+
+        <h2 class="$modifier_class"><span>Heading</span></h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+
+        <h3 class="$modifier_class"><span>Heading</span></h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+
+        <h4 class="$modifier_class"><span>Heading</span></h4>
+        <p>Lorem ipsum dolor sit amet.</p>
+      
+    </div>
+    
+      <div class="styleguide-element styleguide-modifier">
+        <span class="styleguide-modifier-name">.banner</span>
+        
+        <h1 class=" banner"><span>Heading</span></h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+
+        <h2 class=" banner"><span>Heading</span></h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+
+        <h3 class=" banner"><span>Heading</span></h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+
+        <h4 class=" banner"><span>Heading</span></h4>
+        <p>Lorem ipsum dolor sit amet.</p>
+      
+      </div>
+    
+    <div class="styleguide-html">
+      <pre class="styleguide-code"><code class="html">
+        &lt;h1 class=&quot;$modifier_class&quot;&gt;&lt;span&gt;Heading&lt;/span&gt;&lt;/h1&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+
+        &lt;h2 class=&quot;$modifier_class&quot;&gt;&lt;span&gt;Heading&lt;/span&gt;&lt;/h2&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+
+        &lt;h3 class=&quot;$modifier_class&quot;&gt;&lt;span&gt;Heading&lt;/span&gt;&lt;/h3&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+
+        &lt;h4 class=&quot;$modifier_class&quot;&gt;&lt;span&gt;Heading&lt;/span&gt;&lt;/h4&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+      </code></pre>
+    </div>
+  </div>
+
+</div>
+
+
+      <div class="styleguide-example">
+
+  <h3><a class="js-jump-scroll" href="#121" id="121">1.2.1 - Unordered Lists</a> <em>_base.scss</em></h3>
+  <div class="styleguide-example-content">
+    <div class="styleguide-description">
+    <p>List of items with no ordering.</p>
+
+    
+    </div>
+    <div class="styleguide-element">
+      
+        <ul>
+          <li>Norway</li>
+          <li>Sweden</li>
+          <li>Finland</li>
+        </ul>
+      
+    </div>
+    
+    <div class="styleguide-html">
+      <pre class="styleguide-code"><code class="html">
+        &lt;ul&gt;
+          &lt;li&gt;Norway&lt;/li&gt;
+          &lt;li&gt;Sweden&lt;/li&gt;
+          &lt;li&gt;Finland&lt;/li&gt;
+        &lt;/ul&gt;
+      </code></pre>
+    </div>
+  </div>
+
+</div>
+
+
+      <div class="styleguide-example">
+
+  <h3><a class="js-jump-scroll" href="#122" id="122">1.2.2 - Ordered Lists</a> <em>_base.scss</em></h3>
+  <div class="styleguide-example-content">
+    <div class="styleguide-description">
+    <p>List of items with numerical ordering.</p>
+
+    
+    </div>
+    <div class="styleguide-element">
+      
+        <ol>
+          <li>Norway</li>
+          <li>Sweden</li>
+          <li>Finland</li>
+        </ol>
+      
+    </div>
+    
+    <div class="styleguide-html">
+      <pre class="styleguide-code"><code class="html">
+        &lt;ol&gt;
+          &lt;li&gt;Norway&lt;/li&gt;
+          &lt;li&gt;Sweden&lt;/li&gt;
+          &lt;li&gt;Finland&lt;/li&gt;
+        &lt;/ol&gt;
+      </code></pre>
+    </div>
+  </div>
+
+</div>
+
+
+      <div class="styleguide-example">
+
+  <h3><a class="js-jump-scroll" href="#13" id="13">1.3 - Inline Elements</a> <em>_base.scss</em></h3>
+  <div class="styleguide-example-content">
+    <div class="styleguide-description">
+    <p>Inline text elements.</p>
+
+    
+    </div>
+    <div class="styleguide-element">
+      
+        <p>Lorem <em>italic</em> dolor <mark>important</mark> amet.
+        This is some <strong>bold</strong> text, a <a href="#">link</a>, and a <a href="#" class="secondary">secondary link</a>.</p>
+      
+    </div>
+    
+    <div class="styleguide-html">
+      <pre class="styleguide-code"><code class="html">
+        &lt;p&gt;Lorem &lt;em&gt;italic&lt;/em&gt; dolor &lt;mark&gt;important&lt;/mark&gt; amet.
+        This is some &lt;strong&gt;bold&lt;/strong&gt; text, a &lt;a href=&quot;#&quot;&gt;link&lt;/a&gt;, and a &lt;a href=&quot;#&quot; class=&quot;secondary&quot;&gt;secondary link&lt;/a&gt;.&lt;/p&gt;
+      </code></pre>
+    </div>
+  </div>
+
+</div>
+
+    </section>
+
+    <section class="styleguide-section styleguide-doc-section">
+      <h2 id="layout">Layout</h2>
+      <img src="styleguide/assets/grid-visualization.jpg" alt="visualization of grid on DoSomething.org homepage" />
+      <p>We use <a href="http://neat.bourbon.io">Bourbon Neat</a> to build our interface on a fluid 16-column grid. See the <a href="http://neat.bourbon.io/docs">documentation</a> for implementation details. See <a href="https://github.com/DoSomething/neue/blob/dev/scss/globals/_grid-settings.scss"><code>_grid-settings.scss</code></a> for grid settings and breakpoints.</p>
+      <p>Drag the <a href="javascript:(function(){jQuery('body').toggleClass('show-visual-grid')})();" class="btn secondary kss-grid-bookmarklet">Grid Bookmarklet</a> to your bookmarks toolbar and click to toggle a grid overlay on any Neue-powered DoSomething.org website. Or just click to try it out on this page!</p>
+    <div class="styleguide-example">
+
+  <h3><a class="js-jump-scroll" href="#31" id="31">3.1 - Container</a> <em>_container.scss</em></h3>
+  <div class="styleguide-example-content">
+    <div class="styleguide-description">
+    <p>Standard container for centered 12-column layouts. Collapses to full-width on mobile.</p>
+
+    
+    </div>
+    <div class="styleguide-element">
+      
+      <!-- this is a boring example... -->
+      <div class="container">
+        <div class="wrapper">
+          <p>Hi.</p>
+        </div>
+      </div>
+    
+    </div>
+    
+    <div class="styleguide-html">
+      <pre class="styleguide-code"><code class="html">
+      &lt;!-- this is a boring example... --&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;wrapper&quot;&gt;
+          &lt;p&gt;Hi.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    </code></pre>
+    </div>
+  </div>
+
+</div>
+
+    </section>
+
+  <section class="styleguide-section">
+    <h2 id="patterns">Patterns</h2>
+
+    <h4 id="forms">4.1 Forms</h4>
+    <div class="styleguide-example">
+
+  <h3><a class="js-jump-scroll" href="#411" id="411">4.1.1 - Form Labels</a> <em>_forms.scss</em></h3>
+  <div class="styleguide-example-content">
+    <div class="styleguide-description">
+    <p>Labels for form elements. Optional validation styles triggered by client-side validation.</p>
+
+    
+      <ul class="styleguide-modifier">
+        
+          <li><strong>.success</strong> - Successful form validation</li>
+        
+          <li><strong>.warning</strong> - Warning form validation (not an error, but worth double-checking).</li>
+        
+          <li><strong>.error</strong> - Something's wrong!</li>
+        
+      </ul>
+    
+    </div>
+    <div class="styleguide-element">
+      
+      <!-- .show-message and .message classes and markup generated dynamically -->
+      <label class="show-message">
+        <div class="message $modifier_class">Label</div>
+      </label>
+      <input class="$modifier_class" type="text">
+    
+    </div>
+    
+      <div class="styleguide-element styleguide-modifier">
+        <span class="styleguide-modifier-name">.success</span>
+        
+      <!-- .show-message and .message classes and markup generated dynamically -->
+      <label class="show-message">
+        <div class="message  success">Label</div>
+      </label>
+      <input class=" success" type="text">
+    
+      </div>
+    
+      <div class="styleguide-element styleguide-modifier">
+        <span class="styleguide-modifier-name">.warning</span>
+        
+      <!-- .show-message and .message classes and markup generated dynamically -->
+      <label class="show-message">
+        <div class="message  warning">Label</div>
+      </label>
+      <input class=" warning" type="text">
+    
+      </div>
+    
+      <div class="styleguide-element styleguide-modifier">
+        <span class="styleguide-modifier-name">.error</span>
+        
+      <!-- .show-message and .message classes and markup generated dynamically -->
+      <label class="show-message">
+        <div class="message  error">Label</div>
+      </label>
+      <input class=" error" type="text">
+    
+      </div>
+    
+    <div class="styleguide-html">
+      <pre class="styleguide-code"><code class="html">
+      &lt;!-- .show-message and .message classes and markup generated dynamically --&gt;
+      &lt;label class=&quot;show-message&quot;&gt;
+        &lt;div class=&quot;message $modifier_class&quot;&gt;Label&lt;/div&gt;
+      &lt;/label&gt;
+      &lt;input class=&quot;$modifier_class&quot; type=&quot;text&quot;&gt;
+    </code></pre>
+    </div>
+  </div>
+
+</div>
+
+
+    <div class="styleguide-example">
+
+  <h3><a class="js-jump-scroll" href="#412" id="412">4.1.2 - Text Input Fields</a> <em>_forms.scss</em></h3>
+  <div class="styleguide-example-content">
+    <div class="styleguide-description">
+    <p>Text input fields. Defaults to full-width, but can be modified to be smaller
+if necessary (use sparingly, it&#39;s generally best to fit to grid container).</p>
+
+    
+      <ul class="styleguide-modifier">
+        
+          <li><strong>.short</strong> - Short input width (e.g. for zip codes)</li>
+        
+          <li><strong>.medium</strong> - Medium-sized input width (e.g. for phone numbers)</li>
+        
+      </ul>
+    
+    </div>
+    <div class="styleguide-element">
+      
+      <input type="text" class="$modifier_class">
+      <input type="text" class="$modifier_class" placeholder="placeholder">
+    
+    </div>
+    
+      <div class="styleguide-element styleguide-modifier">
+        <span class="styleguide-modifier-name">.short</span>
+        
+      <input type="text" class=" short">
+      <input type="text" class=" short" placeholder="placeholder">
+    
+      </div>
+    
+      <div class="styleguide-element styleguide-modifier">
+        <span class="styleguide-modifier-name">.medium</span>
+        
+      <input type="text" class=" medium">
+      <input type="text" class=" medium" placeholder="placeholder">
+    
+      </div>
+    
+    <div class="styleguide-html">
+      <pre class="styleguide-code"><code class="html">
+      &lt;input type=&quot;text&quot; class=&quot;$modifier_class&quot;&gt;
+      &lt;input type=&quot;text&quot; class=&quot;$modifier_class&quot; placeholder=&quot;placeholder&quot;&gt;
+    </code></pre>
+    </div>
+  </div>
+
+</div>
+
+
+    <div class="styleguide-example">
+
+  <h3><a class="js-jump-scroll" href="#413" id="413">4.1.3 - Search Fields</a> <em>_forms.scss</em></h3>
+  <div class="styleguide-example-content">
+    <div class="styleguide-description">
+    <p>Specific style rules for search input fields.</p>
+
+    
+    </div>
+    <div class="styleguide-element">
+      
+      <input type="search" placeholder="Search...">
+    
+    </div>
+    
+    <div class="styleguide-html">
+      <pre class="styleguide-code"><code class="html">
+      &lt;input type=&quot;search&quot; placeholder=&quot;Search...&quot;&gt;
+    </code></pre>
+    </div>
+  </div>
+
+</div>
+
+
+    <div class="styleguide-example">
+
+  <h3><a class="js-jump-scroll" href="#414" id="414">4.1.4 - Text Area Fields</a> <em>_forms.scss</em></h3>
+  <div class="styleguide-example-content">
+    <div class="styleguide-description">
+    <p>Multi-line textarea fields.</p>
+
+    
+    </div>
+    <div class="styleguide-element">
+      
+      <textarea name="textarea" placeholder="Write something here..."></textarea>
+    
+    </div>
+    
+    <div class="styleguide-html">
+      <pre class="styleguide-code"><code class="html">
+      &lt;textarea name=&quot;textarea&quot; placeholder=&quot;Write something here...&quot;&gt;&lt;/textarea&gt;
+    </code></pre>
+    </div>
+  </div>
+
+</div>
+
+
+    <div class="styleguide-example">
+
+  <h3><a class="js-jump-scroll" href="#415" id="415">4.1.5 - Buttons</a> <em>_forms.scss</em></h3>
+  <div class="styleguide-example-content">
+    <div class="styleguide-description">
+    <p>Button styles for both input and anchor buttons. Suitable for all-purpose use. Defaults
+to <code>.primary</code> class.</p>
+
+    
+      <ul class="styleguide-modifier">
+        
+          <li><strong>:hover</strong> - Suble hover state (will not be displayed on touch interfaces)</li>
+        
+          <li><strong>:focus</strong> - Focus state for users navigating the page using tab keys.</li>
+        
+          <li><strong>:active</strong> - "Pushed" button state</li>
+        
+          <li><strong>.disabled</strong> - Disabled (non-interactive) button state. Consider removing button from interface if not necessary to avoid confusion.</li>
+        
+          <li><strong>.loading</strong> - AJAX loading animation. Used when loading results inline. ==Must be used on `a` or `button`. Will not work with `input` elements.==</li>
+        
+          <li><strong>.secondary</strong> - Should be used if not the main call-to-action on a page.</li>
+        
+          <li><strong>.tertiary</strong> - Used to de-emphasize button (for example, a "cancel" option), but still show inline with other fields.</li>
+        
+      </ul>
+    
+    </div>
+    <div class="styleguide-element">
+      
+      <a class="btn $modifier_class">Example Button</a>
+    
+    </div>
+    
+      <div class="styleguide-element styleguide-modifier">
+        <span class="styleguide-modifier-name">:hover</span>
+        
+      <a class="btn  pseudo-class-hover">Example Button</a>
+    
+      </div>
+    
+      <div class="styleguide-element styleguide-modifier">
+        <span class="styleguide-modifier-name">:focus</span>
+        
+      <a class="btn  pseudo-class-focus">Example Button</a>
+    
+      </div>
+    
+      <div class="styleguide-element styleguide-modifier">
+        <span class="styleguide-modifier-name">:active</span>
+        
+      <a class="btn  pseudo-class-active">Example Button</a>
+    
+      </div>
+    
+      <div class="styleguide-element styleguide-modifier">
+        <span class="styleguide-modifier-name">.disabled</span>
+        
+      <a class="btn  disabled">Example Button</a>
+    
+      </div>
+    
+      <div class="styleguide-element styleguide-modifier">
+        <span class="styleguide-modifier-name">.loading</span>
+        
+      <a class="btn  loading">Example Button</a>
+    
+      </div>
+    
+      <div class="styleguide-element styleguide-modifier">
+        <span class="styleguide-modifier-name">.secondary</span>
+        
+      <a class="btn  secondary">Example Button</a>
+    
+      </div>
+    
+      <div class="styleguide-element styleguide-modifier">
+        <span class="styleguide-modifier-name">.tertiary</span>
+        
+      <a class="btn  tertiary">Example Button</a>
+    
+      </div>
+    
+    <div class="styleguide-html">
+      <pre class="styleguide-code"><code class="html">
+      &lt;a class=&quot;btn $modifier_class&quot;&gt;Example Button&lt;/a&gt;
+    </code></pre>
+    </div>
+  </div>
+
+</div>
+
+
+    <div class="styleguide-example">
+
+  <h3><a class="js-jump-scroll" href="#416" id="416">4.1.6 - Select Boxes</a> <em>_forms.scss</em></h3>
+  <div class="styleguide-example-content">
+    <div class="styleguide-description">
+    <p>Select boxes present a list of options on a form.</p>
+
+    
+    </div>
+    <div class="styleguide-element">
+      
+      <select class="$modifier_class">
+        <option>Awesome Things</option>
+        <option>Popular Things</option>
+        <option>Random Things</option>
+      </select>
+    
+    </div>
+    
+    <div class="styleguide-html">
+      <pre class="styleguide-code"><code class="html">
+      &lt;select class=&quot;$modifier_class&quot;&gt;
+        &lt;option&gt;Awesome Things&lt;/option&gt;
+        &lt;option&gt;Popular Things&lt;/option&gt;
+        &lt;option&gt;Random Things&lt;/option&gt;
+      &lt;/select&gt;
+    </code></pre>
+    </div>
+  </div>
+
+</div>
+
+
+    <div class="styleguide-example">
+
+  <h3><a class="js-jump-scroll" href="#417" id="417">4.1.7 - Loading Spinner</a> <em>_forms.scss</em></h3>
+  <div class="styleguide-example-content">
+    <div class="styleguide-description">
+    <p>Spinner to indicate loading content.</p>
+
+    
+    </div>
+    <div class="styleguide-element">
+      
+      <div class="spinner"></div>
+    
+    </div>
+    
+    <div class="styleguide-html">
+      <pre class="styleguide-code"><code class="html">
+      &lt;div class=&quot;spinner&quot;&gt;&lt;/div&gt;
+    </code></pre>
+    </div>
+  </div>
+
+</div>
+
+
+    <div class="styleguide-example">
+
+  <h3><a class="js-jump-scroll" href="#418" id="418">4.1.8 - Status Banners</a> <em>_forms.scss</em></h3>
+  <div class="styleguide-example-content">
+    <div class="styleguide-description">
+    <p>Status message styles. These should be used to provide feedback to the user for
+events that occur outside the normal application flow (such as form validation errors).</p>
+
+<p><mark>Close button is added using JavaScript. See &quot;system-messages.js&quot;.</mark></p>
+
+    
+      <ul class="styleguide-modifier">
+        
+          <li><strong>.error</strong> - Used to display errors. Be careful not to blame the user for a mistake.</li>
+        
+      </ul>
+    
+    </div>
+    <div class="styleguide-element">
+      
+      <div class="messages $modifier_class"><strong>There's something <em>I need</em></strong> to tell you.</div>
+    
+    </div>
+    
+      <div class="styleguide-element styleguide-modifier">
+        <span class="styleguide-modifier-name">.error</span>
+        
+      <div class="messages  error"><strong>There's something <em>I need</em></strong> to tell you.</div>
+    
+      </div>
+    
+    <div class="styleguide-html">
+      <pre class="styleguide-code"><code class="html">
+      &lt;div class=&quot;messages $modifier_class&quot;&gt;&lt;strong&gt;There&#39;s something &lt;em&gt;I need&lt;/em&gt;&lt;/strong&gt; to tell you.&lt;/div&gt;
+    </code></pre>
+    </div>
+  </div>
+
+</div>
+
+
+    <h4 id="inline">4.2 Inline</h4>
+    <div class="styleguide-example">
+
+  <h3><a class="js-jump-scroll" href="#421" id="421">4.2.1 - Legal Text</a> <em>_inline.scss</em></h3>
+  <div class="styleguide-example-content">
+    <div class="styleguide-description">
+    <p>Legal text (a.k.a. the fine print).</p>
+
+    
+    </div>
+    <div class="styleguide-element">
+      
+      <p class="legal">By clicking submit, you agree to <a href="#">sell your soul</a> to the lorem ipsum dolor sit amet.</p>
+    
+    </div>
+    
+    <div class="styleguide-html">
+      <pre class="styleguide-code"><code class="html">
+      &lt;p class=&quot;legal&quot;&gt;By clicking submit, you agree to &lt;a href=&quot;#&quot;&gt;sell your soul&lt;/a&gt; to the lorem ipsum dolor sit amet.&lt;/p&gt;
+    </code></pre>
+    </div>
+  </div>
+
+</div>
+
+
+    <div class="styleguide-example">
+
+  <h3><a class="js-jump-scroll" href="#422" id="422">4.2.2 - Pullquote</a> <em>_inline.scss</em></h3>
+  <div class="styleguide-example-content">
+    <div class="styleguide-description">
+    <p>An pullquote draws attention to a particular quote from the
+text. Generally used with an <code>aside</code> element.</p>
+
+    
+    </div>
+    <div class="styleguide-element">
+      
+      <p class="pullquote">Lorem ipsum dolor sit aquote.</p>
+    
+    </div>
+    
+    <div class="styleguide-html">
+      <pre class="styleguide-code"><code class="html">
+      &lt;p class=&quot;pullquote&quot;&gt;Lorem ipsum dolor sit aquote.&lt;/p&gt;
+    </code></pre>
+    </div>
+  </div>
+
+</div>
+
+
+    <h4 id="navigation">4.3 Navigation</h4>
+
+    <div class="styleguide-example">
+
+  <h3><a class="js-jump-scroll" href="#431" id="431">4.3.1 - Tabs</a> <em>_navigation.scss</em></h3>
+  <div class="styleguide-example-content">
+    <div class="styleguide-description">
+    <p>Used to navigate between sections/panels/pages within an interface. Apply <code>.active</code> class to
+link element for &quot;active&quot; state.</p>
+
+    
+      <ul class="styleguide-modifier">
+        
+          <li><strong>.vertical</strong> - Vertical tab layout (for use in a sidebar).</li>
+        
+      </ul>
+    
+    </div>
+    <div class="styleguide-element">
+      
+      <nav class="tabs $modifier_class">
+        <ul>
+          <li><a class="active" href="#">Section One</a></li>
+          <li><a href="#">Section Two</a></li>
+          <li><a href="#">Section Three</a></li>
+        </ul>
+      </nav>
+    
+    </div>
+    
+      <div class="styleguide-element styleguide-modifier">
+        <span class="styleguide-modifier-name">.vertical</span>
+        
+      <nav class="tabs  vertical">
+        <ul>
+          <li><a class="active" href="#">Section One</a></li>
+          <li><a href="#">Section Two</a></li>
+          <li><a href="#">Section Three</a></li>
+        </ul>
+      </nav>
+    
+      </div>
+    
+    <div class="styleguide-html">
+      <pre class="styleguide-code"><code class="html">
+      &lt;nav class=&quot;tabs $modifier_class&quot;&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a class=&quot;active&quot; href=&quot;#&quot;&gt;Section One&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Section Two&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Section Three&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+    </code></pre>
+    </div>
+  </div>
+
+</div>
+
+
+    <h4 id="widgets">4.4 Widgets</h4>
+    <div class="styleguide-example">
+
+  <h3><a class="js-jump-scroll" href="#441" id="441">4.4.1 - Modal (Popup)</a> <em>_widgets.scss</em></h3>
+  <div class="styleguide-example-content">
+    <div class="styleguide-description">
+    <p>Show supplementary information to a user without leaving the page. Fills screen on mobile, centered with overlay on tablet/desktop.</p>
+
+<h4>Options:</h4>
+
+<ul>
+<li><code>[data-modal-close]</code>: set to &quot;true&quot; to include a close button on the modal, or &quot;skip&quot; to delegate a skip form action</li>
+<li><code>[data-modal-skip-form]</code>: selector for a skip <code>form</code> element to submit upon clicking the &quot;skip&quot; link</li>
+</ul>
+
+    
+    </div>
+    <div class="styleguide-element">
+      
+    <a href="#modal--example" class="js-modal-link">Show example modal</a> or <a href="http://www.google.com" data-cached-modal="#modal--example" class="js-modal-link">alternative syntax</a>
+
+    <script type="text/cached-modal" id="modal--example" data-modal-close="true" data-modal-close-class="white">
+      <h2 class="banner">Example Content</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, officia impedit eius velit consectetur provident ullam! Incidunt, rem, maxime sit non natus praesentium nobis voluptas enim repudiandae. Commodi, eum, accusamus. Let us take a look at <a href="#modal--pagetwo" class="js-modal-link">another modal</a>.</p>
+    </script>
+
+    <script type="text/cached-modal" id="modal--pagetwo" data-modal-close="skip" data-modal-skip-form="#skip-form">
+      <h2>Page 2</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, officia impedit eius velit consectetur provident ullam! Incidunt, rem, maxime sit non natus praesentium nobis voluptas enim repudiandae. Commodi, eum, accusamus.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, officia impedit eius velit consectetur provident ullam! Incidunt, rem, maxime sit non natus praesentium nobis voluptas enim repudiandae. Commodi, eum, accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, officia impedit eius velit consectetur provident ullam! Incidunt, rem, maxime sit non natus praesentium nobis voluptas enim repudiandae. Commodi, eum, accusamus.</p>
+      <form action="#">
+        <label for="name">Name</label>
+        <input type="text" class="js-validate" name="name" id="name" data-validate-trigger="#confirmName">
+
+        <label for="confirmName">Confirm Name</label>
+        <input type="text" name="confirmName" class="js-validate" data-validate="match" data-validate-match="#name" id="confirmName">
+
+        <div class="form-actions">
+          <input type="submit" class="btn">
+        </div>
+      </form>
+      <form action="http://www.google.com" id="skip-form">
+        <div class="form-actions">
+          <input type="submit" value="Skip" class="btn tertiary">
+        </div>
+      </form>
+    </script>
+  
+    </div>
+    
+    <div class="styleguide-html">
+      <pre class="styleguide-code"><code class="html">
+    &lt;a href=&quot;#modal--example&quot; class=&quot;js-modal-link&quot;&gt;Show example modal&lt;/a&gt; or &lt;a href=&quot;http://www.google.com&quot; data-cached-modal=&quot;#modal--example&quot; class=&quot;js-modal-link&quot;&gt;alternative syntax&lt;/a&gt;
+
+    &lt;script type=&quot;text/cached-modal&quot; id=&quot;modal--example&quot; data-modal-close=&quot;true&quot; data-modal-close-class=&quot;white&quot;&gt;
+      &lt;h2 class=&quot;banner&quot;&gt;Example Content&lt;/h2&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, officia impedit eius velit consectetur provident ullam! Incidunt, rem, maxime sit non natus praesentium nobis voluptas enim repudiandae. Commodi, eum, accusamus. Let us take a look at &lt;a href=&quot;#modal--pagetwo&quot; class=&quot;js-modal-link&quot;&gt;another modal&lt;/a&gt;.&lt;/p&gt;
+    &lt;/script&gt;
+
+    &lt;script type=&quot;text/cached-modal&quot; id=&quot;modal--pagetwo&quot; data-modal-close=&quot;skip&quot; data-modal-skip-form=&quot;#skip-form&quot;&gt;
+      &lt;h2&gt;Page 2&lt;/h2&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, officia impedit eius velit consectetur provident ullam! Incidunt, rem, maxime sit non natus praesentium nobis voluptas enim repudiandae. Commodi, eum, accusamus.&lt;/p&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, officia impedit eius velit consectetur provident ullam! Incidunt, rem, maxime sit non natus praesentium nobis voluptas enim repudiandae. Commodi, eum, accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, officia impedit eius velit consectetur provident ullam! Incidunt, rem, maxime sit non natus praesentium nobis voluptas enim repudiandae. Commodi, eum, accusamus.&lt;/p&gt;
+      &lt;form action=&quot;#&quot;&gt;
+        &lt;label for=&quot;name&quot;&gt;Name&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;js-validate&quot; name=&quot;name&quot; id=&quot;name&quot; data-validate-trigger=&quot;#confirmName&quot;&gt;
+
+        &lt;label for=&quot;confirmName&quot;&gt;Confirm Name&lt;/label&gt;
+        &lt;input type=&quot;text&quot; name=&quot;confirmName&quot; class=&quot;js-validate&quot; data-validate=&quot;match&quot; data-validate-match=&quot;#name&quot; id=&quot;confirmName&quot;&gt;
+
+        &lt;div class=&quot;form-actions&quot;&gt;
+          &lt;input type=&quot;submit&quot; class=&quot;btn&quot;&gt;
+        &lt;/div&gt;
+      &lt;/form&gt;
+      &lt;form action=&quot;http://www.google.com&quot; id=&quot;skip-form&quot;&gt;
+        &lt;div class=&quot;form-actions&quot;&gt;
+          &lt;input type=&quot;submit&quot; value=&quot;Skip&quot; class=&quot;btn tertiary&quot;&gt;
+        &lt;/div&gt;
+      &lt;/form&gt;
+    &lt;/script&gt;
+  </code></pre>
+    </div>
+  </div>
+
+</div>
+
+
+  <h4 id="cta">4.6 CTA</h4>
+  <div class="styleguide-example">
+
+  <h3><a class="js-jump-scroll" href="#461" id="461">4.6.1 - CTA</a> <em>_cta.scss</em></h3>
+  <div class="styleguide-example-content">
+    <div class="styleguide-description">
+    <p>Module class for a CTA or Call To Action is used to show show a short &quot;call to action&quot; message with an accompanying button.
+CTA&#39;s typically span the full width of the page.</p>
+
+    
+    </div>
+    <div class="styleguide-element">
+      
+    <div class="cta">
+      <div class="wrapper">
+        <h2 class="__message">Miscreant! You should pay homage to our future kitten overlords:</h2>
+        <a href="#" class="btn medium">Support Our Kittens</a>
+      </div>
+    </div>
+  
+    </div>
+    
+    <div class="styleguide-html">
+      <pre class="styleguide-code"><code class="html">
+    &lt;div class=&quot;cta&quot;&gt;
+      &lt;div class=&quot;wrapper&quot;&gt;
+        &lt;h2 class=&quot;__message&quot;&gt;Miscreant! You should pay homage to our future kitten overlords:&lt;/h2&gt;
+        &lt;a href=&quot;#&quot; class=&quot;btn medium&quot;&gt;Support Our Kittens&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  </code></pre>
+    </div>
+  </div>
+
+</div>
+
+
+  <h4 id="tile">4.7 Tile</h4>
+  <div class="styleguide-example">
+
+  <h3><a class="js-jump-scroll" href="#471" id="471">4.7.1 - Tile</a> <em>_tile.scss</em></h3>
+  <div class="styleguide-example-content">
+    <div class="styleguide-description">
+    <p>Module class for tile blocks that can be placed in multiple contexts on a page. Specifically used for campaign tiles, but can be used for other content as well.
+A tile block usually contains an image with a title and a tagline.</p>
+
+    
+    </div>
+    <div class="styleguide-element">
+      
+    <article class="tile tile--campaign">
+      <a class="wrapper" href="#">
+        <div class="tile--meta">
+          <h1 class="__title">Kitten Overlords</h1>
+          <p class="__tagline">According to the latest research, kittens will outlive the human species after the apocalypse.</p>
+        </div>
+        <img alt="kitten overlords" src="http://placekitten.com/g/600/600" />
+      </a>
+    </article>
+  
+    </div>
+    
+    <div class="styleguide-html">
+      <pre class="styleguide-code"><code class="html">
+    &lt;article class=&quot;tile tile--campaign&quot;&gt;
+      &lt;a class=&quot;wrapper&quot; href=&quot;#&quot;&gt;
+        &lt;div class=&quot;tile--meta&quot;&gt;
+          &lt;h1 class=&quot;__title&quot;&gt;Kitten Overlords&lt;/h1&gt;
+          &lt;p class=&quot;__tagline&quot;&gt;According to the latest research, kittens will outlive the human species after the apocalypse.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;img alt=&quot;kitten overlords&quot; src=&quot;http://placekitten.com/g/600/600&quot; /&gt;
+      &lt;/a&gt;
+    &lt;/article&gt;
+  </code></pre>
+    </div>
+  </div>
+
+</div>
+
+
+  <h4 id="gallery">4.8 Gallery</h4>
+  <div class="styleguide-example">
+
+  <h3><a class="js-jump-scroll" href="#481" id="481">4.8.1 - Gallery</a> <em>_gallery.scss</em></h3>
+  <div class="styleguide-example-content">
+    <div class="styleguide-description">
+    <p>Module class for all galleries. Add additional modifier classes to designate styling for a specific type of gallery.
+The .empty class for items in the gallery will create a spacer item that can contain custom messaging and expand to fill the appropriate space based on its own modifier classes.</p>
+
+    
+      <ul class="styleguide-modifier">
+        
+          <li><strong>.-mosaic</strong> - Tiles are arranged without spacing next to each other.</li>
+        
+      </ul>
+    
+    </div>
+    <div class="styleguide-element">
+      
+    <ul class="gallery -mosaic">
+      <li>
+        <article class="tile tile--campaign">
+          <a class="wrapper" href="#">
+            <div class="tile--meta">
+              <h1 class="__title">Kitten Overlord</h1>
+            </div>
+            <img alt="kitten overlords" src="http://placekitten.com/g/300/300" />
+          </a>
+        </article>
+      </li>
+      <li>
+        <article class="tile tile--campaign">
+          <a class="wrapper" href="#">
+            <div class="tile--meta">
+              <h1 class="__title">Kitten Overlord</h1>
+            </div>
+            <img alt="kitten overlords" src="http://placekitten.com/g/300/300" />
+          </a>
+        </article>
+      </li>
+      <li>
+        <article class="tile tile--campaign">
+          <a class="wrapper" href="#">
+            <div class="tile--meta">
+              <h1 class="__title">Kitten Overlord</h1>
+            </div>
+            <img alt="kitten overlords" src="http://placekitten.com/g/300/300" />
+          </a>
+        </article>
+      </li>
+      <li class="empty -mono">
+        <div class="wrapper">
+          <div class="__message">
+            <div class="wrapper">
+              <p>Gah! Nothing to see here.</p>
+              <a href="#">Move Along</a>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  
+    </div>
+    
+      <div class="styleguide-element styleguide-modifier">
+        <span class="styleguide-modifier-name">.-mosaic</span>
+        
+    <ul class="gallery -mosaic">
+      <li>
+        <article class="tile tile--campaign">
+          <a class="wrapper" href="#">
+            <div class="tile--meta">
+              <h1 class="__title">Kitten Overlord</h1>
+            </div>
+            <img alt="kitten overlords" src="http://placekitten.com/g/300/300" />
+          </a>
+        </article>
+      </li>
+      <li>
+        <article class="tile tile--campaign">
+          <a class="wrapper" href="#">
+            <div class="tile--meta">
+              <h1 class="__title">Kitten Overlord</h1>
+            </div>
+            <img alt="kitten overlords" src="http://placekitten.com/g/300/300" />
+          </a>
+        </article>
+      </li>
+      <li>
+        <article class="tile tile--campaign">
+          <a class="wrapper" href="#">
+            <div class="tile--meta">
+              <h1 class="__title">Kitten Overlord</h1>
+            </div>
+            <img alt="kitten overlords" src="http://placekitten.com/g/300/300" />
+          </a>
+        </article>
+      </li>
+      <li class="empty -mono">
+        <div class="wrapper">
+          <div class="__message">
+            <div class="wrapper">
+              <p>Gah! Nothing to see here.</p>
+              <a href="#">Move Along</a>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  
+      </div>
+    
+    <div class="styleguide-html">
+      <pre class="styleguide-code"><code class="html">
+    &lt;ul class=&quot;gallery -mosaic&quot;&gt;
+      &lt;li&gt;
+        &lt;article class=&quot;tile tile--campaign&quot;&gt;
+          &lt;a class=&quot;wrapper&quot; href=&quot;#&quot;&gt;
+            &lt;div class=&quot;tile--meta&quot;&gt;
+              &lt;h1 class=&quot;__title&quot;&gt;Kitten Overlord&lt;/h1&gt;
+            &lt;/div&gt;
+            &lt;img alt=&quot;kitten overlords&quot; src=&quot;http://placekitten.com/g/300/300&quot; /&gt;
+          &lt;/a&gt;
+        &lt;/article&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;article class=&quot;tile tile--campaign&quot;&gt;
+          &lt;a class=&quot;wrapper&quot; href=&quot;#&quot;&gt;
+            &lt;div class=&quot;tile--meta&quot;&gt;
+              &lt;h1 class=&quot;__title&quot;&gt;Kitten Overlord&lt;/h1&gt;
+            &lt;/div&gt;
+            &lt;img alt=&quot;kitten overlords&quot; src=&quot;http://placekitten.com/g/300/300&quot; /&gt;
+          &lt;/a&gt;
+        &lt;/article&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;article class=&quot;tile tile--campaign&quot;&gt;
+          &lt;a class=&quot;wrapper&quot; href=&quot;#&quot;&gt;
+            &lt;div class=&quot;tile--meta&quot;&gt;
+              &lt;h1 class=&quot;__title&quot;&gt;Kitten Overlord&lt;/h1&gt;
+            &lt;/div&gt;
+            &lt;img alt=&quot;kitten overlords&quot; src=&quot;http://placekitten.com/g/300/300&quot; /&gt;
+          &lt;/a&gt;
+        &lt;/article&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;empty -mono&quot;&gt;
+        &lt;div class=&quot;wrapper&quot;&gt;
+          &lt;div class=&quot;__message&quot;&gt;
+            &lt;div class=&quot;wrapper&quot;&gt;
+              &lt;p&gt;Gah! Nothing to see here.&lt;/p&gt;
+              &lt;a href=&quot;#&quot;&gt;Move Along&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  </code></pre>
+    </div>
+  </div>
+
+</div>
+
+
+  <h4 id="images">4.9 Images</h4>
+  <div class="styleguide-example">
+
+  <h3><a class="js-jump-scroll" href="#491" id="491">4.9.1 - Figures</a> <em>_images.scss</em></h3>
+  <div class="styleguide-example-content">
+    <div class="styleguide-description">
+    <p>Style for images in content sections.</p>
+
+    
+    </div>
+    <div class="styleguide-element">
+      
+    <figure class="content-figure">
+      <img src="http://www.placekitten.com/g/600/400" alt="a kitten">
+      <figcaption>This is a kitten. It is not to be trusted.</figcaption>
+    </figure>
+  
+    </div>
+    
+    <div class="styleguide-html">
+      <pre class="styleguide-code"><code class="html">
+    &lt;figure class=&quot;content-figure&quot;&gt;
+      &lt;img src=&quot;http://www.placekitten.com/g/600/400&quot; alt=&quot;a kitten&quot;&gt;
+      &lt;figcaption&gt;This is a kitten. It is not to be trusted.&lt;/figcaption&gt;
+    &lt;/figure&gt;
+  </code></pre>
+    </div>
+  </div>
+
+</div>
+
+
+  <div class="styleguide-example">
+
+  <h3><a class="js-jump-scroll" href="#492" id="492">4.9.2 - Bordered image style</a> <em>_images.scss</em></h3>
+  <div class="styleguide-example-content">
+    <div class="styleguide-description">
+    <p>Stylized image, with a thick border and subtle shadow.</p>
+
+    
+    </div>
+    <div class="styleguide-element">
+      
+    <img class="bordered" src="http://www.placekitten.com/g/300/200" alt="another kitten">
+  
+    </div>
+    
+    <div class="styleguide-html">
+      <pre class="styleguide-code"><code class="html">
+    &lt;img class=&quot;bordered&quot; src=&quot;http://www.placekitten.com/g/300/200&quot; alt=&quot;another kitten&quot;&gt;
+  </code></pre>
+    </div>
+  </div>
+
+</div>
+
+
+  <div class="styleguide-example">
+
+  <h3><a class="js-jump-scroll" href="#493" id="493">4.9.3 - Polaroid image style</a> <em>_images.scss</em></h3>
+  <div class="styleguide-example-content">
+    <div class="styleguide-description">
+    <p>Module class for styling a figure with a &quot;polaroid&quot; effect.</p>
+
+    
+    </div>
+    <div class="styleguide-element">
+      
+    <figure class="polaroid">
+      <img src="http://www.placekitten.com/g/320/320" alt="another kitten">
+    </figure>
+  
+    </div>
+    
+    <div class="styleguide-html">
+      <pre class="styleguide-code"><code class="html">
+    &lt;figure class=&quot;polaroid&quot;&gt;
+      &lt;img src=&quot;http://www.placekitten.com/g/320/320&quot; alt=&quot;another kitten&quot;&gt;
+    &lt;/figure&gt;
+  </code></pre>
+    </div>
+  </div>
+
+</div>
+
+
+
+  <h4 id="callout">4.10 Message Callout</h4>
+  <div class="styleguide-example">
+
+  <h3><a class="js-jump-scroll" href="#410" id="410">4.10 - Message Callout</a> <em>_message-callout.scss</em></h3>
+  <div class="styleguide-example-content">
+    <div class="styleguide-description">
+    <p>Module class for styling a text block callout with arrow pointing to other content.</p>
+
+    
+      <ul class="styleguide-modifier">
+        
+          <li><strong>.-below</strong> - Callout is positioned below an element.</li>
+        
+          <li><strong>.-above</strong> - Callout is positioned above element it's pointing to.</li>
+        
+          <li><strong>.-right</strong> - Callout is positioned to the right of element it's pointing to.</li>
+        
+          <li><strong>.-dynamic-right</strong> - Callout that starts below or above an item on mobile, but then switches to positon to the right of item.</li>
+        
+          <li><strong>.-white</strong> - White text and arrow (for use on dark backgrounds).</li>
+        
+      </ul>
+    
+    </div>
+    <div class="styleguide-element">
+      
+    <div class="message-callout $modifier_class">
+      <div class="__copy">
+        <p>This is something. Mic drop!</p>
+      </div>
+    </div>
+  
+    </div>
+    
+      <div class="styleguide-element styleguide-modifier">
+        <span class="styleguide-modifier-name">.-below</span>
+        
+    <div class="message-callout  -below">
+      <div class="__copy">
+        <p>This is something. Mic drop!</p>
+      </div>
+    </div>
+  
+      </div>
+    
+      <div class="styleguide-element styleguide-modifier">
+        <span class="styleguide-modifier-name">.-above</span>
+        
+    <div class="message-callout  -above">
+      <div class="__copy">
+        <p>This is something. Mic drop!</p>
+      </div>
+    </div>
+  
+      </div>
+    
+      <div class="styleguide-element styleguide-modifier">
+        <span class="styleguide-modifier-name">.-right</span>
+        
+    <div class="message-callout  -right">
+      <div class="__copy">
+        <p>This is something. Mic drop!</p>
+      </div>
+    </div>
+  
+      </div>
+    
+      <div class="styleguide-element styleguide-modifier">
+        <span class="styleguide-modifier-name">.-dynamic-right</span>
+        
+    <div class="message-callout  -dynamic-right">
+      <div class="__copy">
+        <p>This is something. Mic drop!</p>
+      </div>
+    </div>
+  
+      </div>
+    
+      <div class="styleguide-element styleguide-modifier">
+        <span class="styleguide-modifier-name">.-white</span>
+        
+    <div class="message-callout  -white">
+      <div class="__copy">
+        <p>This is something. Mic drop!</p>
+      </div>
+    </div>
+  
+      </div>
+    
+    <div class="styleguide-html">
+      <pre class="styleguide-code"><code class="html">
+    &lt;div class=&quot;message-callout $modifier_class&quot;&gt;
+      &lt;div class=&quot;__copy&quot;&gt;
+        &lt;p&gt;This is something. Mic drop!&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  </code></pre>
+    </div>
+  </div>
+
+</div>
+
+
+  </section>
+
+  <section class="styleguide-section">
+    <h2 id="animation">Animation</h2>
+    <p>We use animation to add a sense of playfulness and delight to our interface. Animation also has a functional aspect – helping to build a user's mental model of an interface by indicating</p>
+
+    <p>See <a href="https://github.com/DoSomething/neue/blob/dev/scss/_main/_animations.scss"><code>animation.scss</code></a> for details. Preview coming soon.</p>
+  </section>
+
+  <section class="styleguide-section with-copy">
+    <h2 id="interaction">Interaction</h2>
+    <p>Neue includes some helper scripts for interactivity. While any application-specific logic should live within its own codebase, you can find the logic that powers some of our reusable patterns <a href="https://github.com/DoSomething/neue/blob/dev/js/">here</a>.</p>
+  </section>
+
+</article>
+
+  <div class="sidebar">
+    <nav class="tabs vertical js-sticky">
+      <ul>
+        <li><a href="#fonts-and-colors" class="js-scroll-indicator js-jump-scroll">Fonts &amp; Colors</a></li>
+        <li><a href="#typography" class="js-scroll-indicator js-jump-scroll">Typography</a></li>
+        <li><a href="#layout" class="js-scroll-indicator js-jump-scroll">Layout</a></li>
+        <li>
+          <a href="#patterns" class="js-scroll-indicator js-jump-scroll">Patterns</a>
+          <ul>
+            <li><a href="#forms" class="js-scroll-indicator js-jump-scroll">Forms</a></li>
+            <li><a href="#inline" class="js-scroll-indicator js-jump-scroll">Inline</a></li>
+            <li><a href="#navigation" class="js-scroll-indicator js-jump-scroll">Navigation</a></li>
+            <li><a href="#widgets" class="js-scroll-indicator js-jump-scroll">Widgets</a></li>
+            <li><a href="#cta" class="js-scroll-indicator js-jump-scroll">CTA</a></li>
+            <li><a href="#tile" class="js-scroll-indicator js-jump-scroll">Tile</a></li>
+            <li><a href="#gallery" class="js-scroll-indicator js-jump-scroll">Gallery</a></li>
+            <li><a href="#images" class="js-scroll-indicator js-jump-scroll">Images</a></li>
+          </ul>
+        </li>
+        <li><a href="#animation" class="js-scroll-indicator js-jump-scroll">Animation</a></li>
+        <li><a href="#interaction" class="js-scroll-indicator js-jump-scroll">Interaction</a></li>
+      </ul>
+    </nav>
+    &nbsp;
+  </div>
+
+  </main>
+
+  <footer class="styleguide--footer">
+    <p>&copy; 2014 DoSomething.org. Released under the <a href="https://github.com/DoSomething/neue/blob/dev/LICENSE">MIT License</a> on <a href="https://github.com/DoSomething/neue/">GitHub</a>. The name and logo for DoSomething.org are trademarks of Do Something, Inc and may not be used without permission.</p>
+  </footer>
+
+</div>
+
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="dist/neue.js"></script>
+<script type="text/javascript" src="styleguide/assets/kss.js"></script>
+<script type="text/javascript" src="styleguide/assets/kss-colortiles.js"></script>
+<script type="text/javascript" src="styleguide/assets/styleguide-domain-tip.js"></script>
+
+<script type="text/javascript" src="bower_components/highlightjs/highlight.pack.js"></script>
+<script type="text/javascript">
+  hljs.initHighlightingOnLoad();
+</script>
+
+</body>
+</html>
